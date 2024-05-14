@@ -11,18 +11,18 @@ class Form1(Form1Template):
   
 
   def insertionSort(self, arr):
-      n = len(arr)  # Get the length of the array
+      n = len(arr)
         
       if n <= 1:
-          return  # If the array has 0 or 1 element, it is already sorted, so return
+          return
   
-      for i in range(1, n):  # Iterate over the array starting from the second element
-          key = arr[i]  # Store the current element as the key to be inserted in the right position
+      for i in range(1, n):
+          key = arr[i]
           j = i-1
-          while j >= 0 and key < arr[j]:  # Move elements greater than key one position ahead
-              arr[j+1] = arr[j]  # Shift elements to the right
+          while j >= 0 and key < arr[j]:
+              arr[j+1] = arr[j]
               j -= 1
-          arr[j+1] = key  # Insert the key in the correct position
+          arr[j+1] = key
   def btnIS_click(self, **event_args):
     input = self.txtInput.text
     isAllNumber = input.replace(" ", "")
