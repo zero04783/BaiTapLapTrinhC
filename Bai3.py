@@ -38,7 +38,7 @@ class Form1(Form1Template):
 
   def btnRandom_click(self, **event_args):
     rand_list=[]
-    n=random.randint(0,20)
+    n=random.randint(5,20)
     for i in range(n):
         rand_list.append(random.randint(0,50))
     rand_list = ' '.join([str(elem) for elem in rand_list])
