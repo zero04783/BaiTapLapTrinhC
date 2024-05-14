@@ -10,6 +10,6 @@ void xuatBoiCua7Co2ChuSo(){
 int main()
 {
     printf("Chuong Trinh xuat cac so nguyen co 2 chu so va la boi cua 7\n");
-    xuatBoiCua7();
+    xuatBoiCua7Co2ChuSo();
     return 0;
 }
